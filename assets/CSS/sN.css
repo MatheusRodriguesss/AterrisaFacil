@@ -2,7 +2,7 @@
 @import url(../style.css);
 
 * {
-    font-family: 'Roboto Condensed';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -78,7 +78,7 @@ header>div:last-child {
 /* main quem somos?, missão, visão e valores */
 
 main {
-    margin: 0px 50px;
+    margin: 0px 150px;
     margin-bottom: -50px;
 }
 
@@ -280,7 +280,38 @@ section>div>div>div>img {
 1600px // Extra Large screen
 1900px // Extra Large screen */
 
+
 @media (max-width:480px) {
+
+    /*  Alteração Navbar */
+
+    header>nav>ul:first-child {
+        display: none;
+    }
+
+    .logo-nav {
+        height: 80px;
+        width: auto;
+    }
+
+    .navbar-pages {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 15px 0 0 0;
+        margin-bottom: 0;
+        /* padding: 1.2em 1em ; */
+    }
+
+    .itens-navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 100%;
+        width: 100%;
+        padding: 0 0;
+    }
 
     .itens-navbar li {
         margin: 0 15px;
@@ -291,11 +322,9 @@ section>div>div>div>img {
     main {
         margin: 0px 0px;
         margin-bottom: -50px;
-    }
-    
-    main {
         margin-bottom: 20px;
     }
+
 
     .textovertical {
         writing-mode: horizontal-tb;
@@ -329,13 +358,47 @@ section>div>div>div>img {
         order: -1;
     }
 
-    /* Fotos integrantes */
+    /* Medidas Footer */
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
 
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
 
+    .footer-clean .item.social {
+        text-align: center;
+    }
 }
 
+@media (min-width: 481px) {
 
-@media (max-width: 768px) {
+    /* Ajustando magin da main */
+
+    main {
+        margin: 0px 50px;
+        margin-bottom: -50px;
+    }
+
+    /* Alteração Nav bar */
+
+    .itens-navbar {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        row-gap: 15px;
+        height: 100%;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    header>nav>ul:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
     /* Medidas Footer */
     .footer-clean .item.social>a {
@@ -354,12 +417,110 @@ section>div>div>div>img {
 
 @media (max-width:991px) {
 
+    /* Logo tamanho */
+
+    .logo-nav {
+        height: 150px;
+        width: auto;
+    }
+
     /* Medidas Footer */
     .footer-clean .item.social>a {
         margin-top: 40px;
     }
+
+    /* tamanho letras */
+
+    header {
+        font-size: larger;
+    }
+
+    .textovertical {
+        font-size: x-large;
+    }
+
+    main {
+        font-size: larger;
+    }
+
+    section {
+        font-size: larger;
+    }
+
+    .opcoesCategorias {
+        font-size: large;
+    }
+
+    .itens figcaption {
+        font-size: large;
+    }
+
+    .footer-clean h3 {
+        font-size: larger;
+    }
+
+    .footer-clean ul {
+        font-size: large;
+    }
+
+    .footer-clean .copyright {
+        font-size: large;
+    }
+
+    #back-to-top {
+        font-size: x-large;
+    }
+
 }
 
 @media (min-width:992px) {
 
+    /* Configuração letras maiores */
+
+    header {
+        font-size: x-large;
+    }
+
+    .textovertical {
+        font-size: xx-large;
+    }
+
+    main {
+        font-size: x-large;
+    }
+
+    section {
+        font-size: x-large;
+    }
+
+    .opcoesCategorias {
+        font-size: larger;
+    }
+
+    .itens figcaption {
+        font-size: larger;
+    }
+
+    .footer-clean h3 {
+        font-size: x-large;
+    }
+
+    .footer-clean ul {
+        font-size: larger;
+    }
+
+    .footer-clean .copyright {
+        font-size: larger;
+    }
+
+    #back-to-top {
+        font-size: xx-large;
+    }
+
+    /* Tamanho imagem empresa */
+
+    .logo-nav {
+        height: 170px;
+        width: auto;
+    }
 }
